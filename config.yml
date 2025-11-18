@@ -1,0 +1,113 @@
+#baseURL: "https://pascalmichaillat.org/hugo-website/"
+title: Andri Rutschmann
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+pagination:
+  pagerSize: 20
+
+taxonomies:
+    tag: tags
+
+menu:
+    main:
+#        - name: Books
+#          url: books/
+#          weight: 5
+        - name: Papers
+          url: papers/
+          weight: 2
+#        - name: Courses
+#          url: courses/
+#          weight: 3
+        - name: Data
+          url: data/
+          weight: 4
+
+params:
+    description: "Homepage"
+    author: Andri Rutschmann
+    # googleAnalyticsID: "G-XXXXX"
+    DateFormat: "January 2006"
+    defaultTheme: light
+    hideFooter: false
+    disableThemeToggle: true
+    ShowShareButtons: false
+    ShowReadingTime: false
+    disableSpecial1stPost: true
+    disableAnchoredHeadings: true
+    ShowPostNavLinks: false
+    ShowBreadCrumbs: false
+    ShowCodeCopyButtons: true
+    ShowAllPagesInArchive: false
+    MainSections: ["papers","data", "misc"]
+    ShowToc: false
+    disableScrollToTop: true
+    TocOpen: true
+    ShowWordCount: false
+    UseHugoToc: true
+    comments: false
+    math: true
+    profileMode:
+          enabled: true
+          title: Andri Rutschmann, B.A.
+          subtitle: "Data scientist in the making."
+          imageUrl: "headshot.jpg"
+          imageWidth: 160
+          imageHeight: 160
+          buttons:
+            - name: Papers
+              url: papers/
+            - name: Data
+              url: data/
+            - name: Misc
+              url: misc/
+            - name: Archive
+              url: archive/
+
+    socialIcons:
+        - name: CV
+          url: cv.pdf
+        - name: Email
+          url: mailto:andri.rutschmann@uni-konstanz.de
+#        - name: Zoom
+#          url: https://www.zoom.us/my/igelfeld
+#        - name: Location
+#          url: location/
+#        - name: Office Hours
+#          url: officehours/
+#        - name: Google Scholar
+#          url: https://scholar.google.com/citations?user=cL23w-4AAAAJ
+        - name: GitHub
+          url: https://github.com/rutschmanna
+#        - name: Substack
+#          url: https://pmichaillat.substack.com
+#        - name: YouTube
+#          url: https://www.youtube.com/@pmichaillat
+#        - name: Twitter
+#          url: https://x.com/pmichaillat
+#        - name: Bluesky
+#          url: https://bsky.app/profile/pmichaillat.bsky.social
+
+    assets:
+        disableScrollBarStyle: true
+    cover:
+        hiddenInList: false
+        hiddenInSingle: true
+    label:
+      text: "Andri Rutschmann"
+      icon: r.ico
+      iconHeight: 18
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
+        guessSyntax: true
+        style: autumn 
+    tableOfContents:
+        endLevel: 2
+        ordered: false
+        startLevel: 2
