@@ -6,6 +6,11 @@
     {{- else }}
     <span>&copy; {{ now.Year }} {{ site.Title }}</span>
     {{- end }}
+    {{- end }}
+
+    {{- with site.Params.footer.text }}
+    {{ . | markdownify }}
+    {{- end }}
 </footer>
 {{- end }}
 
