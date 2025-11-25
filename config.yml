@@ -51,7 +51,7 @@ params:
     math: true
     profileMode:
           enabled: true
-          title: Andri Rutschmann.
+          title: Andri Rutschmann
           subtitle: "Data & AI scientist."
           imageUrl: "headshot.jpg"
           imageWidth: 160
