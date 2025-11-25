@@ -70,7 +70,7 @@ params:
         - name: CV
           url: cv.pdf
         - name: Email
-          url: mailto:andri.rutschmann@uni-konstanz.de
+          url: mailto:rutschmanna@pm.me
 #        - name: Zoom
 #          url: https://www.zoom.us/my/igelfeld
 #        - name: Location
