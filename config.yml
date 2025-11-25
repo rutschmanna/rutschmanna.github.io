@@ -29,7 +29,7 @@ params:
     description: "Homepage"
     author: Andri Rutschmann
     # googleAnalyticsID: "G-XXXXX"
-    DateFormat: "January 2006"
+    DateFormat: "January 2025"
     defaultTheme: light
     hideFooter: false
     disableThemeToggle: true
@@ -51,8 +51,8 @@ params:
     math: true
     profileMode:
           enabled: true
-          title: Andri Rutschmann, B.A.
-          subtitle: "Data scientist in the making."
+          title: Andri Rutschmann.
+          subtitle: "Data & AI scientist."
           imageUrl: "headshot.jpg"
           imageWidth: 160
           imageHeight: 160
