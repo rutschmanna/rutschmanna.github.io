@@ -11,7 +11,7 @@ cover:
     relative: true
 editPost:
     URL: "https://github.com/rutschmanna/oasis"
-    Text: "SPOD"
+    Text: "M.Sc. Thesis, University of Constance"
 
 ---
 
