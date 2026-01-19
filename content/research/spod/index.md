@@ -3,7 +3,7 @@ title: "Simulating Public Online Discourse Using Large Language Models"
 date: 2025-08-27
 tags: ["LLMs","GABM","Social Simulation","LLM Simulacra", "Reddit"]
 author: ["Andri Rutschmann"]
-description: "M.Sc. thesis, simulating political discussions in a Reddit-like social media environment using 180 LLM-based agents, University of Constance." 
+description: "" 
 summary: "The thesis explores the capabilities of an LLM-based simulation framework for the purpose of simulating public social media discourse. It proposes a custom simulation framework and highlights achievements as well as challenges and validity concerns." 
 cover:
     image: "spod_cover.png"
@@ -51,7 +51,7 @@ LLMs as subjects in the simulation of human online discourse.
 
 ##### Citation
 
-Rutschmann, A. (2025). *Simulating Public Online Discourse Using Large Language Models* [M.Sc. Thesis, University of Constance]. https://rutschmanna.github.io/research/
+Rutschmann, A. (2025). *Simulating Public Online Discourse Using Large Language Models* [M.Sc. Thesis, University of Constance]. https://rutschmanna.github.io/research/spod/
 
 ```latex
 @thesis{}
