@@ -1,6 +1,6 @@
 ---
 title: "Under Review - 280 Characters of Bias: Left vs. Right Followership and the Likelihood of Sexist Statements on X (Twitter)" 
-date: 2026
+date: 2025-09-01
 tags: ["X","Sexism"]
 author: ["Andri Rutschmann and Sascha Grehl"]
 description: "" 
