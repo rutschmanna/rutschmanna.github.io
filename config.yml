@@ -23,7 +23,7 @@ menu:
 #          weight: 3
 #        - name: Data
 #          url: data/
-          weight: 4
+#          weight: 4
 
 params:
     description: "Homepage"
@@ -41,7 +41,7 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["papers", "misc"] #"research","data", "misc"
+    MainSections: ["research", "misc"] #"research","data", "misc"
     ShowToc: false
     disableScrollToTop: true
     TocOpen: true
