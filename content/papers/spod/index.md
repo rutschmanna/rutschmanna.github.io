@@ -19,7 +19,7 @@ editPost:
 
 ##### Download
 
-+ [Paper](spod.pdf)
++ [Manuscript](spod.pdf)
 + [Appendix](appendix_spod.pdf)
 + [Code & data](https://github.com/rutschmanna/oasis)
 

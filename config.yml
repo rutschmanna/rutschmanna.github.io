@@ -15,14 +15,14 @@ menu:
 #        - name: Books
 #          url: books/
 #          weight: 5
-        - name: Papers
-          url: papers/
+        - name: Research
+          url: research/
           weight: 2
 #        - name: Courses
 #          url: courses/
 #          weight: 3
-        - name: Data
-          url: data/
+#        - name: Data
+#          url: data/
           weight: 4
 
 params:
@@ -41,7 +41,7 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["papers","data", "misc"]
+    MainSections: ["papers", "misc"] #"research","data", "misc"
     ShowToc: false
     disableScrollToTop: true
     TocOpen: true
@@ -57,12 +57,12 @@ params:
           imageWidth: 160
           imageHeight: 160
           buttons:
-            - name: Papers
-              url: papers/
-            - name: Data
-              url: data/
-            - name: Misc
-              url: misc/
+            - name: Research
+              url: research/
+#            - name: Data
+#              url: data/
+#            - name: Misc
+#              url: misc/
             - name: Archive
               url: archive/
 

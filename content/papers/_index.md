@@ -1,4 +1,4 @@
 ---
-title: "Papers"
+title: "Research"
 description: "Pre-prints and articles."
 ---
