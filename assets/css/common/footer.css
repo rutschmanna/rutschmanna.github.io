@@ -9,7 +9,7 @@
     padding: calc((var(--footer-height) - var(--gap)) / 2) var(--gap);
     text-align: center;
     line-height: 20px;
-    background: var(--code-bg);
+    background: color-mix(in srgb, var(--code-bg) 85%, transparent);
 }
 
 .footer span {

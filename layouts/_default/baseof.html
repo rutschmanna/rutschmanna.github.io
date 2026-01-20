@@ -17,6 +17,7 @@
 {{- print " dark" }}
 {{- end -}}
 " id="top">
+    {{ partial "vanta-net.html" . }}
     {{- if not .IsHome  }}
     {{- partialCached "header.html" . .Page -}}
     {{- end }}
@@ -24,5 +25,6 @@
         {{- block "main" . }}{{ end }}
     </main>
     {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
+    {{ partial "vanta-scripts.html" . }}
 </body>
 </html>
