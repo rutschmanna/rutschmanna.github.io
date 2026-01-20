@@ -5,23 +5,15 @@ tags: ["LLMs","GABM","Social Simulation","LLM Simulacra", "Reddit"]
 author: ["Andri Rutschmann"]
 description: "" 
 summary: "The thesis explores the capabilities of an LLM-based simulation framework for the purpose of simulating public social media discourse. It proposes a custom simulation framework and highlights achievements as well as challenges and validity concerns." 
-cover:
-    image: "spod_cover.png"
-    alt: "SPOD"
-    relative: true
+#cover:
+#    image: "spod_cover.png"
+#    alt: "SPOD"
+#    relative: true
 editPost:
     URL: "https://github.com/rutschmanna/oasis"
     Text: "M.Sc. Thesis, University of Constance"
 
 ---
-
----
-
-##### Download
-
-+ [Manuscript](spod.pdf)
-+ [Appendix](appendix_spod.pdf)
-+ [Code & data](https://github.com/rutschmanna/oasis)
 
 ---
 
@@ -48,6 +40,12 @@ LLMs as subjects in the simulation of human online discourse.
 
 ---
 
+##### Availability
+
++ [Code](https://github.com/rutschmanna/oasis)
++ Interested in the paper? Reach out to [me](rutschmanna@pm.me).
+
+---
 
 ##### Citation
 
