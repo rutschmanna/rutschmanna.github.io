@@ -53,9 +53,9 @@ params:
           enabled: true
           title: "Andri Rutschmann"
           subtitle: "Data & AI scientist."
-          imageUrl: "headshot.jpg"
-          imageWidth: 160
-          imageHeight: 160
+#          imageUrl: "headshot.jpg"
+#          imageWidth: 160
+#          imageHeight: 160
           buttons:
             - name: Research
               url: research/
