@@ -1,66 +1,90 @@
 /* assets/js/vanta-init.js */
 (() => {
     const getCssVar = (prop, fallback) => {
-        const val = getComputedStyle(document.documentElement).getPropertyValue(prop);
-        return val ? val.trim() : fallback;
+        const v = getComputedStyle(document.documentElement).getPropertyValue(prop);
+        return v ? v.trim() : fallback;
     };
 
-    const hexStringToNumber = (hexStr, fallbackNumber) => {
-        // If the value is already a number (our numeric fallback), just return it
+    const hexStringToNumber = (hexStr, fallbackNum) => {
         if (typeof hexStr === "number") return hexStr;
-
-        // Strip a leading "#" if present
         const cleaned = hexStr.replace(/^#/, "");
-
-        // Validate that we have 3 or 6 hex digits; otherwise use fallback
-        const isValid = /^[0-9A-Fa-f]{3}$|^[0-9A-Fa-f]{6}$/.test(cleaned);
-        if (!isValid) return fallbackNumber;
-
-        // Parse as base‑16 and return the numeric value
+        if (!/^[0-9A-Fa-f]{3}$|^[0-9A-Fa-f]{6}$/.test(cleaned)) return fallbackNum;
         return parseInt(cleaned, 16);
     };
 
-    const initVanta = () => {
-        const rawBg   = getCssVar("--vanta-bg",   0xefefef);
-        const rawLine = getCssVar("--vanta-color", 0x367e5e);
+    const isMobile = () => window.innerWidth <= 768;
 
-        const bgColor   = hexStringToNumber(rawBg,   0xefefef);
-        const lineColor = hexStringToNumber(rawLine, 0x367e5e);
+    //Build the Vanta options object
+    const buildOptions = () => {
+        // Colors (always numeric)
+        const bgColor   = hexStringToNumber(getCssVar("--vanta-bg",   0xefefef), 0xefefef);
+        const lineColor = hexStringToNumber(getCssVar("--vanta-color", 0x367e5e), 0x367e5e);
 
-        // Destroy any previous instance (important when toggling theme)
-        if (window.vantaInstance && typeof window.vantaInstance.destroy === "function") {
-            window.vantaInstance.destroy();
-        }
-
-        // Initialize Vanta.NET with the *numeric* colors
-        window.vantaInstance = VANTA.NET({
+        // Base options that are the same for both layouts
+        const base = {
             el: "#vanta-net-bg",
             backgroundColor: bgColor,
             color: lineColor,
-            points: 12,
-            maxDistance: 25,
-            spacing: 15,
             mouseControls: true,
             touchControls: true,
             gyroControls: false,
             minHeight: 200,
             minWidth: 200,
             scale: 1,
-            scaleMobile: 0.5,
             showDots: false,
+        };
+
+        // Mobile‑specific overrides
+        if (isMobile()) {
+            return Object.assign(base, {
+                points: 15,
+                spacing: 20,
+                maxDistance: 20,
+                scaleMobile: 0.7,
+            });
+        }
+
+        // Desktop (or larger tablet) overrides
+        return Object.assign(base, {
+            points: 15,
+            spacing: 15,
+            maxDistance: 25,
+            scaleMobile: 1,
         });
     };
 
-    // Run once on page load
+    //Initialize / re‑initialize Vanta
+    const initVanta = () => {
+        // Destroy any previous instance (important when toggling theme or resizing)
+        if (window.vantaInstance && typeof window.vantaInstance.destroy === "function") {
+            window.vantaInstance.destroy();
+        }
+
+        // Build the options object based on current viewport & colours
+        const opts = buildOptions();
+
+        // Create the new Vanta instance
+        window.vantaInstance = VANTA.NET(opts);
+    };
+
+    //Run on first load
     document.addEventListener("DOMContentLoaded", initVanta);
 
-    // Re‑initialize when the theme toggle changes the <html> attribute
-    const observer = new MutationObserver(mutations => {
-        for (const mut of mutations) {
-            if (mut.type === "attributes" && mut.attributeName === "data-theme") {
-                initVanta(); // colours will be read again from the CSS vars
+    //Re‑initialize when the theme toggles (data‑theme attribute)
+    const themeObserver = new MutationObserver(muts => {
+        for (const m of muts) {
+            if (m.type === "attributes" && m.attributeName === "data-theme") {
+                initVanta();   // colors may have changed
             }
         }
     });
-    observer.observe(document.documentElement, { attributes: true });
+    themeObserver.observe(document.documentElement, { attributes: true });
+
+    let resizeTimeout;
+    window.addEventListener("resize", () => {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+            initVanta();   // recompute mobile/desktop options
+        }, 250); // 250 ms debounce
+    });
 })();
