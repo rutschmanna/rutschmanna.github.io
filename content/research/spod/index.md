@@ -43,7 +43,7 @@ LLMs as subjects in the simulation of human online discourse.
 ##### Availability
 
 + [Code](https://github.com/rutschmanna/oasis)
-+ Interested in the paper? Reach out to [me](rutschmanna@pm.me).
++ Interested in the paper? Reach out to me [✉️](mailto:rutschmanna@pm.me).
 
 ---
 
