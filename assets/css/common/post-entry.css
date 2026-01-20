@@ -37,7 +37,7 @@
     position: relative;
     margin-bottom: var(--gap);
     padding: var(--gap);
-    background: var(--entry);
+    background: color-mix(in srgb, var(--entry) 85%, transparent);
     border-radius: var(--radius);
     transition: transform 0.1s;
     border: 2px solid var(--border);
