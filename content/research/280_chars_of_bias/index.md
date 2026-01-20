@@ -10,7 +10,7 @@ cover:
     alt: ""
     relative: true
 editPost:
-    URL: "https://www.inlibra.com/de/journal/view/issn/0038-6073"
-    Text: "SozW Soziale Welt"
+    URL: ""
+    Text: ""
 
 ---
