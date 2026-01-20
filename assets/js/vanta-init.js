@@ -46,7 +46,7 @@
             minHeight: 200,
             minWidth: 200,
             scale: 1,
-            scaleMobile: 1,
+            scaleMobile: 0.5,
             showDots: false,
         });
     };
