@@ -10,7 +10,7 @@ cover:
     alt: "SPOD"
     relative: true
 editPost:
-    URL: "https://github.com/rutschmanna/oasis"
+    URL: "https://www.polver.uni-konstanz.de/studium/master/master-social-and-economic-data-science/"
     Text: "M.Sc. Thesis, University of Constance"
 
 ---
