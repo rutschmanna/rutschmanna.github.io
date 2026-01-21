@@ -28,7 +28,7 @@
             mouseControls: true,
             touchControls: true,
             gyroControls: false,
-            forceAnimate: true,
+            forceAnimate: false,
             minHeight: 200,
             minWidth: 200,
             scale: 1,
