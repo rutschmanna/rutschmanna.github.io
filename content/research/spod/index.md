@@ -4,14 +4,14 @@ date: 2025-08-27
 tags: ["LLMs","GABM","Social Simulation","LLM Simulacra", "Reddit"]
 author: ["Andri Rutschmann"]
 description: "" 
-summary: "The thesis explores the capabilities of an LLM-based simulation framework for the purpose of simulating public social media discourse. It proposes a custom simulation framework and highlights achievements as well as challenges and validity concerns." 
+summary: "The thesis explores the capabilities of an LLM-based simulation framework for the purpose of simulating public social media discourse. It expands the OASIS simulation framework and highlights achievements as well as challenges and validity concerns." 
 cover:
     image: "spod_cover2.png"
     alt: "SPOD"
     relative: true
 editPost:
     URL: "https://www.polver.uni-konstanz.de/studium/master/master-social-and-economic-data-science/"
-    Text: "M.Sc. Thesis, University of Constance"
+    Text: "M.Sc. Thesis, University of Konstanz"
 
 ---
 
