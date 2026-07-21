@@ -52,7 +52,7 @@ params:
     profileMode:
           enabled: true
           title: "Andri Rutschmann"
-          subtitle: "Data & AI scientist."
+          subtitle: "I'm a computational social scientist working at the intersection of large language models and empirical social research. My recent work uses multi-agent LLM simulations to study public online discourse: for my M.Sc. thesis I extended the open-source OASIS framework to simulate political discussion among 180 persona-conditioned agents — and examined when such simulations were, and weren't, valid instruments for social science. More broadly, I'm interested in how AI systems shape discourse, work, and society, and in building the empirical and simulation methods needed to anticipate those effects"
 #          imageUrl: "headshot.jpg"
 #          imageWidth: 160
 #          imageHeight: 160
