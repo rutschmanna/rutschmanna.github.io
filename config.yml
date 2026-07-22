@@ -71,7 +71,7 @@ params:
 
     socialIcons:
         - name: CV
-          url: /cv_26-07.pdf
+          url: /cv.pdf
         - name: Email
           url: mailto:rutschmanna@pm.me
 #        - name: Zoom
