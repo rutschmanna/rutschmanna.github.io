@@ -1,16 +1,4 @@
 /* assets/js/vanta-init.js */
-
-// Ensure the home page honors OS dark preference even if the
-// theme script didn't tag <body> (profile-mode layouts sometimes skip it)
-(() => {
-    const saved = localStorage.getItem("pref-theme");
-    const wantsDark =
-    saved === "dark" ||
-    (!saved && window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches);
-    if (wantsDark) document.body.classList.add("dark");
-})();
-
 (() => {
     const getCssVar = (prop, fallback) => {
         const v = getComputedStyle(document.body).getPropertyValue(prop);
