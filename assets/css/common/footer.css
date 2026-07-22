@@ -9,7 +9,6 @@
     padding: calc((var(--footer-height) - var(--gap)) / 2) var(--gap);
     text-align: center;
     line-height: 20px;
-    background: color-mix(in srgb, var(--code-bg) 85%, transparent);
 }
 
 .footer span {
@@ -32,8 +31,8 @@
 .top-link {
     visibility: hidden;
     position: fixed;
-    bottom: 60px;
-    right: 30px;
+    bottom: 20px;
+    right: 20px;
     z-index: 99;
     background: var(--tertiary);
     width: 42px;
