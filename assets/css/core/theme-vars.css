@@ -18,15 +18,16 @@
     --code-bg: rgb(245, 245, 245);
     --border: rgb(238, 238, 238);
 
-    --vanta-bg: #efefef;
-    --vanta-color: #367e5e;
+    --vanta-bg: #f2efe9;
+    --vanta-color: #cf6a3c;
 
     --entry-bg: color-mix(in srgb, var(--entry) var(--entry-opacity), transparent);
 
     --gray: rgb(165, 165, 165);
-    --darkcolor: #6a7ba2;
-    --lightcolor: #cbd1de;
+    --darkcolor: #a85d2e;
+    --lightcolor: #f0dccb;
     --semibold: 500;
+    --bold: 600;
     --homesize: 16px;
     --textsize: 18px;
     --h1size: 25px;
@@ -49,10 +50,13 @@
     --code-bg: rgb(55, 56, 62);
     --border: rgb(51, 51, 51);
 
-    --vanta-bg: #17171a;
-    --vanta-color: #206022;
+    --vanta-bg: #17151a;
+    --vanta-color: #e0713a;
 
     --entry-bg: color-mix(in srgb, var(--entry) var(--entry-opacity), transparent);
+
+    --darkcolor: #d99b6a;
+    --lightcolor: #4a3a2c;
 }
 
 .list {

@@ -7,8 +7,8 @@
 }
 
 .archive-year-header {
-    font-size: 1.4rem;
-    font-weight: var(--semibold);
+    font-size: var(--h1size);
+    font-weight: var(--bold);
 }
 
 .archive-year:not(:last-of-type) {
@@ -22,16 +22,23 @@
 }
 
 .archive-month-header {
-    margin: var(--homesize) 0;
+    margin: var(--textsize) 0;
     width: 150px;
-    font-weight: var(--semibold);
+    font-weight: var(--bold);
     font-size: var(--homesize);
 }
 
 .archive-entry {
     position: relative;
-    padding: 5px 0;
+    padding: 15px var(--gap);
     margin: 10px 0;
+    background: var(--entry-bg);
+    border: var(--border);
+    border-radius: var(--radius);
+}
+
+.archive-entry:hover {
+    border: 2px solid var(--darkcolor);
 }
 
 .archive-entry-title {
@@ -44,13 +51,4 @@
 .archive-meta {
     color: var(--secondary);
     font-size: 14px;
-}
-
-.archive-entry {
-    position: relative;
-    padding: 10px var(--gap);
-    margin: 10px 0;
-    background: var(--entry-bg);
-    border: 2px solid var(--border);
-    border-radius: var(--radius);
 }
