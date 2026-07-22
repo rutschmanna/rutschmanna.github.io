@@ -6,7 +6,7 @@
     --header-height: 44px;
     --footer-height: 44px;
     --radius: 8px;
-/*
+
     --theme: rgb(255, 255, 255);
     --entry: rgb(255, 255, 255);
     --primary: rgb(30, 30, 30);
@@ -16,7 +16,10 @@
     --code-block-bg: rgb(28, 29, 33);
     --code-bg: rgb(245, 245, 245);
     --border: rgb(238, 238, 238);
-*/
+
+    --entry-opacity: 85%;
+    --entry-bg: color-mix(in srgb, var(--entry) var(--entry-opacity), transparent);
+/*
     --theme: rgb(29, 30, 32);
     --entry: rgb(46, 46, 51);
     --primary: rgb(218, 218, 219);
@@ -26,6 +29,7 @@
     --code-block-bg: rgb(46, 46, 51);
     --code-bg: rgb(55, 56, 62);
     --border: rgb(51, 51, 51);
+*/
     --gray: rgb(165, 165, 165);
     --darkcolor: #6a7ba2;
     --lightcolor: #cbd1de;
@@ -39,12 +43,13 @@
     --lineheight: 1.45;
     --lineclamp: 8;
     --marginleft: 26px;
-/*
+
     --vanta-bg: #efefef;
     --vanta-color: #367e5e;
-*/
+/*
     --vanta-bg: #17171a;
     --vanta-color: #206022;
+*/
 }
 
 .dark {
@@ -59,6 +64,8 @@
     --border: rgb(51, 51, 51);
     --vanta-bg: #17171a;
     --vanta-color: #206022;
+
+    --entry-bg: color-mix(in srgb, var(--entry) var(--entry-opacity), transparent);
 }
 
 .list {

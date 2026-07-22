@@ -45,3 +45,11 @@
 .button:hover {
     background: var(--lightcolor);
 }
+
+.profile .profile_inner {
+    background: var(--entry-bg);
+    border: var(--border);
+    border-radius: var(--radius);
+    padding: var(--gap);
+    max-width: var(--main-width);
+}

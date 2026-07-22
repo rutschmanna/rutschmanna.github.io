@@ -439,3 +439,10 @@ a[href^="#fn:"], a[href^="#fnref:"] {
 a[href^="#fn:"]:hover, a[href^="#fnref:"]:hover {
     color: var(--darkcolor);
 }
+
+.post-single {
+    background: var(--entry-bg);
+    border: var(--border);
+    border-radius: var(--radius);
+    padding: var(--gap);
+}

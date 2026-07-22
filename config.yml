@@ -24,14 +24,17 @@ menu:
 #        - name: Data
 #          url: data/
 #          weight: 4
+        - name: Archive
+          url: archive/
+          weight: 1
 
 params:
     description: "Homepage"
     author: Andri Rutschmann
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
-    defaultTheme: light
-    hideFooter: false
+    defaultTheme: auto
+    hideFooter: true
     disableThemeToggle: true
     ShowShareButtons: false
     ShowReadingTime: false

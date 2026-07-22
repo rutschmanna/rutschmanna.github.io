@@ -37,10 +37,10 @@
     position: relative;
     margin-bottom: var(--gap);
     padding: var(--gap);
-    background: color-mix(in srgb, var(--entry) 85%, transparent);
+    background: var(--entry-bg);
     border-radius: var(--radius);
     transition: transform 0.1s;
-    border: 2px solid var(--border);
+    border: var(--border);
 }
 
 .post-entry:hover {

@@ -45,3 +45,12 @@
     color: var(--secondary);
     font-size: 14px;
 }
+
+.archive-entry {
+    position: relative;
+    padding: 10px var(--gap);
+    margin: 10px 0;
+    background: var(--entry-bg);
+    border: 2px solid var(--border);
+    border-radius: var(--radius);
+}

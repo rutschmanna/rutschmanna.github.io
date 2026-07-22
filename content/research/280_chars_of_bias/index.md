@@ -3,8 +3,8 @@ title: "280 Characters of Bias: Left vs. Right Followership and the Likelihood o
 date:
 tags: []
 author: ["Andri Rutschmann and Sascha Grehl"]
-description: "Forthcomming" 
-summary: "" 
+description: "" 
+summary: "Forthcomming" 
 cover:
     image: ""
     alt: ""

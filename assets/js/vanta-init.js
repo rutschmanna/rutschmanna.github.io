@@ -1,7 +1,19 @@
 /* assets/js/vanta-init.js */
+
+// Ensure the home page honors OS dark preference even if the
+// theme script didn't tag <body> (profile-mode layouts sometimes skip it)
+(() => {
+    const saved = localStorage.getItem("pref-theme");
+    const wantsDark =
+    saved === "dark" ||
+    (!saved && window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches);
+    if (wantsDark) document.body.classList.add("dark");
+})();
+
 (() => {
     const getCssVar = (prop, fallback) => {
-        const v = getComputedStyle(document.documentElement).getPropertyValue(prop);
+        const v = getComputedStyle(document.body).getPropertyValue(prop);
         return v ? v.trim() : fallback;
     };
 
@@ -74,12 +86,12 @@
     //Re‑initialize when the theme toggles (data‑theme attribute)
     const themeObserver = new MutationObserver(muts => {
         for (const m of muts) {
-            if (m.type === "attributes" && m.attributeName === "data-theme") {
+            if (m.type === "attributes" && m.attributeName === "class") {
                 initVanta();   // colors may have changed
             }
         }
     });
-    themeObserver.observe(document.documentElement, { attributes: true });
+    themeObserver.observe(document.body, { attributes: true });
 
     let resizeTimeout;
     window.addEventListener("resize", () => {
