@@ -17,13 +17,13 @@ menu:
 #          weight: 5
         - name: Research
           url: research/
-          weight: 2
+          weight: 3
 #        - name: Courses
 #          url: courses/
 #          weight: 3
-#        - name: Data
-#          url: data/
-#          weight: 4
+        - name: Data
+          url: data/
+          weight: 2
         - name: Archive
           url: archive/
           weight: 1
@@ -44,7 +44,7 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["research", "misc"] #"research","data", "misc"
+    MainSections: ["research", "data", "misc"] #"research","data", "misc"
     ShowToc: false
     disableScrollToTop: false
     TocOpen: true
@@ -62,8 +62,8 @@ params:
           buttons:
             - name: Research
               url: research/
-#            - name: Data
-#              url: data/
+            - name: Data
+              url: data/
 #            - name: Misc
 #              url: misc/
             - name: Archive
