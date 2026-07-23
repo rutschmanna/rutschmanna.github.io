@@ -33,10 +33,10 @@ Part of the [280 Characters of Bias](/research/280_chars_of_bias/) research proj
 ```bibtex
 @article{gestic2026,
   title   = {280 Characters of Bias: Left vs. Right Followership and the
-            Likelihood of Sexist Statements on Twitter},
-  author  = {},
-  journal = {Soziale Welt},
-  year    = {2026}
+            Likelihood of Sexist Statements on {Twitter}},
+  author  = {Rutschmann, Andri and Grehl, Sascha},
+  journal = {},
+  year    = {forthcomming}
 }
 ```
 
