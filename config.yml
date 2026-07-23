@@ -60,14 +60,14 @@ params:
 #          imageWidth: 160
 #          imageHeight: 160
           buttons:
-            - name: Research
-              url: research/
-            - name: Data
-              url: data/
-#            - name: Misc
-#              url: misc/
             - name: Archive
               url: archive/
+            - name: Data
+              url: data/
+            - name: Research
+              url: research/
+#            - name: Misc
+#              url: misc/
 
     socialIcons:
         - name: CV
