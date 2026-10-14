@@ -29,7 +29,7 @@ menu:
           weight: 1
 
 params:
-    description: "Homepage"
+    description: "Computational social scientist working at the intersection of large language models and empirical social research."
     author: Andri Rutschmann
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
